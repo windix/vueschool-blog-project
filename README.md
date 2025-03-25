@@ -1,4 +1,4 @@
-# VueShool Blog Project
+# VueSchool Blog Project
 
 This is an example project following along vueshool lesson [Vue 3 Composition API](https://vueschool.io/courses/vue-3-composition-api)
 
