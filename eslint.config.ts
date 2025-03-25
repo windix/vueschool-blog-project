@@ -23,4 +23,11 @@ export default defineConfigWithVueTs(
   vueTsConfigs.recommended,
   ...oxlint.configs['flat/recommended'],
   skipFormatting,
+
+  {
+    rules: {
+      // used by `unplugin-vue-router`
+      'vue/multi-word-component-names': 'off',
+    },
+  },
 )
