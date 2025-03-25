@@ -14,5 +14,5 @@ const buildInfo = ref('')
 </script>
 
 <template>
-  <pre>{{ buildInfo }}</pre>
+  <pre class="m-4">{{ buildInfo }}</pre>
 </template>
