@@ -13,4 +13,10 @@ const { isLoading } = usePageRequests()
   <main>
     <RouterView />
   </main>
+  <footer>
+    <hr class="" />
+    <p class="text-center text-gray-500 text-sm p-2">
+      <RouterLink to="/build-info">&copy; 2025 Blog</RouterLink>
+    </p>
+  </footer>
 </template>
