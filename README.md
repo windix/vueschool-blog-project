@@ -9,3 +9,5 @@ Modified to try out the latest stack:
 - TailwindCSS@4.0.15 for Vite
 
 Backend mock data REST API is from: [{JSON} Placeholder](https://jsonplaceholder.typicode.com/)
+
+This has been deployed to Vercel on: https://vueschool-blog-project.vercel.app/
