@@ -1,9 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import usePageRequests from './composables/usePageRequests'
+const { isLoading } = usePageRequests()
+</script>
 
 <template>
-  <div
-    class="h-[200px] w-[400px] bg-blue-500 m-3 text-[130px] text-amber-100 p-10 font-extralight tracking-widest rounded-2xl shadow-2xl"
-  >
-    Hello
-  </div>
+  <header class="h-15 bg-emerald-300">
+    <h1 class="text-white text-4xl p-2 mx-4 flex gap-2">
+      <RouterLink to="/posts">Blog</RouterLink>
+      <span v-if="isLoading">Loading...</span>
+    </h1>
+  </header>
+  <main>
+    <RouterView />
+  </main>
 </template>

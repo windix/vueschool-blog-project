@@ -3,7 +3,13 @@ import { routes } from 'vue-router/auto-routes'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes,
+  routes: [
+    {
+      path: '/',
+      redirect: () => ({ path: '/posts' }),
+    },
+    ...routes,
+  ],
 })
 
 export default router
